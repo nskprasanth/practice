@@ -6,6 +6,9 @@ template <typename T>
 bst<T>::bst() : root(NULL) {}
 
 template <typename T>
+bst<T>::bst(binary_node<T>* root_node) : root(root_node) {}
+
+template <typename T>
 void bst<T>::insert(const T& val) {
   binary_node<T>* node = new binary_node<T>(val);
 

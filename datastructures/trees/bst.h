@@ -15,6 +15,8 @@ class bst {
   public:
     bst();
 
+    bst(binary_node<T>* root_node);
+
     // inserts a given element into the binary search tree
     virtual void insert(const T&);
 
